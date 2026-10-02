@@ -1,359 +1,319 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neethu Reddy | Developer Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <title>Neethu Reddy | Developer Portfolio</title>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    <link rel="stylesheet" href="style.css">
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #202538;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #263b80;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav h2 {
+      font-size: 23px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    nav a:hover {
+      color: #a9d9ff;
+    }
+
+    section {
+      padding: 55px 8%;
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #354bb1, #159be8);
+      color: white;
+      text-align: center;
+      padding: 85px 8%;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: white;
+      color: #263b80;
+      padding: 11px 22px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 6px;
+    }
+
+    .button:hover {
+      background: #e2efff;
+    }
+
+    h2.section-title {
+      text-align: center;
+      color: #263b80;
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .skill {
+      background: white;
+      border: 1px solid #dce3f2;
+      border-radius: 20px;
+      padding: 10px 18px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(30, 50, 100, 0.1);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #e0e5ef;
+    }
+
+    .project-card h3 {
+      color: #263b80;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      margin-bottom: 15px;
+    }
+
+    .project-card a {
+      color: #2455c3;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: auto;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+
+    .contact {
+      text-align: center;
+      background: #eaf0fc;
+    }
+
+    .contact a {
+      color: #263b80;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #202c52;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 8px;
+      }
+
+      section {
+        padding: 40px 6%;
+      }
+
+      .hero {
+        padding: 60px 6%;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <nav>
+    <h2>Neethu Reddy</h2>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar">
-            <h2 class="logo">Neethu Reddy</h2>
+  <section class="hero" id="home">
+    <h1>Hello, I'm Neethu Reddy</h1>
+    <p>Student Developer | Learning Flutter, Dart and Web Development</p>
+    <a class="button" href="#projects">View My Projects</a>
+    <a class="button" href="https://github.com/neethureddych" target="_blank" rel="noopener noreferrer">My GitHub</a>
+  </section>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#hackathons">Hackathons</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <p>
+        I'm a student developer who enjoys learning programming and building
+        practical projects. I work on applications that help solve everyday
+        problems while improving my coding and problem-solving skills.
+      </p>
+    </div>
+  </section>
 
-    <!-- Home -->
-    <section id="home" class="hero">
+  <section id="skills">
+    <h2 class="section-title">Skills & Technologies</h2>
+    <div class="skills">
+      <span class="skill">C Programming</span>
+      <span class="skill">Dart</span>
+      <span class="skill">Flutter</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Git</span>
+      <span class="skill">GitHub</span>
+      <span class="skill">REST APIs</span>
+    </div>
+  </section>
 
-        <div class="hero-content">
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
 
-            <p class="intro">Hello, I'm</p>
-
-            <h1>Neethu Reddy</h1>
-
-            <h2>C Programmer & Beginner Developer</h2>
-
-            <p>
-                I build practical software projects using C, Git and GitHub,
-                and I'm continuously learning new technologies.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn">
-                    View My Projects
-                </a>
-
-                <a href="https://github.com/neethureddych"
-                   target="_blank"
-                   class="btn secondary-btn">
-                    GitHub
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-
-        <h2>About Me</h2>
-
+    <div class="projects">
+      <article class="project-card">
+        <img
+          src="https://raw.githubusercontent.com/neethureddych/attendance-tracker/main/attendancetracker.png"
+          alt="Attendance Tracker dashboard screenshot"
+          loading="lazy"
+        >
+        <h3>Attendance Tracker</h3>
         <p>
-            I'm a beginner developer interested in software development
-            and problem solving. I enjoy building practical projects,
-            learning programming concepts, and improving my skills through
-            hands-on development.
+          A Flutter application for managing students and tracking attendance.
+          Includes attendance summaries, local data persistence, API integration,
+          Provider state management, and automated tests.
         </p>
+        <a href="https://github.com/neethureddych/attendance-tracker"
+           target="_blank" rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </article>
 
+      <article class="project-card">
+        <h3>CodeMemory</h3>
         <p>
-            I have built several management systems using C and have learned
-            how to use Git and GitHub to manage and share my projects.
+          An AI-assisted code review project designed to review Python code
+          and remember lessons from previous reviews.
         </p>
+        <a href="https://github.com/neethureddych"
+           target="_blank" rel="noopener noreferrer">
+          Explore my GitHub →
+        </a>
+      </article>
 
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section">
-
-        <h2>Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <h3>C</h3>
-                <p>Programming and problem solving</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Git</h3>
-                <p>Version control</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>GitHub</h3>
-                <p>Code hosting and collaboration</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>VS Code</h3>
-                <p>Development environment</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>File Handling</h3>
-                <p>Reading and writing data in C</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section">
-
-        <h2>Projects</h2>
-
-        <div class="projects-container">
-
-            <!-- Project 1 -->
-            <div class="project-card">
-                <h3>Student Marks Calculator</h3>
-
-                <p>
-                    A C program for calculating student marks and results.
-                </p>
-
-                <a href="https://github.com/neethureddych/student-marks-calculator"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h3>Student Grade Management System</h3>
-
-                <p>
-                    A C-based system for managing student grades.
-                </p>
-
-                <a href="https://github.com/neethureddych/student-grade-management-system"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <h3>Contact Management System</h3>
-
-                <p>
-                    A contact management application with file storage.
-                </p>
-
-                <a href="https://github.com/neethureddych/contact-management-system"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <h3>Bank Account Management System</h3>
-
-                <p>
-                    A C application for managing bank accounts,
-                    deposits and withdrawals.
-                </p>
-
-                <a href="https://github.com/neethureddych/bank-account-management-system"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-            <!-- Project 5 -->
-            <div class="project-card">
-                <h3>Library Management System</h3>
-
-                <p>
-                    A system for managing books, issuing books and returns.
-                </p>
-
-                <a href="https://github.com/neethureddych/library-management-system"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-            <!-- Project 6 -->
-            <div class="project-card">
-                <h3>Hospital Management System</h3>
-
-                <p>
-                    A C-based system for managing patients and doctors.
-                </p>
-
-                <a href="https://github.com/neethureddych/hospital-management-system"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-            <!-- Project 7 -->
-            <div class="project-card">
-                <h3>ATM Management System</h3>
-
-                <p>
-                    An ATM simulation with account login, deposits,
-                    withdrawals and PIN management.
-                </p>
-
-                <a href="https://github.com/neethureddych/atm-management-system"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-            <!-- Project 8 -->
-            <div class="project-card">
-                <h3>Shopping Billing System</h3>
-
-                <p>
-                    A billing system for managing products, stock and carts.
-                </p>
-
-                <a href="https://github.com/neethureddych/shopping-billing-system"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-            <!-- Project 9 -->
-            <div class="project-card">
-                <h3>Employee Payroll Management System</h3>
-
-                <p>
-                    A payroll system for calculating employee salaries.
-                </p>
-
-                <a href="https://github.com/neethureddych/employee-payroll-management-system"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-            <!-- Project 10 -->
-            <div class="project-card">
-                <h3>Hotel Management System</h3>
-
-                <p>
-                    A system for managing hotel rooms, bookings and checkouts.
-                </p>
-
-                <a href="https://github.com/neethureddych/hotel-management-system"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-            <!-- Project 11 -->
-            <div class="project-card">
-                <h3>Vehicle Rental Management System</h3>
-
-                <p>
-                    A system for managing vehicles, rentals and returns.
-                </p>
-
-                <a href="https://github.com/neethureddych/vehicle-rental-management-system"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-            <!-- Project 12 -->
-            <div class="project-card">
-                <h3>SmartSpend</h3>
-
-                <p>
-                    An expense management system for tracking,
-                    searching, updating and calculating expenses.
-                </p>
-
-                <a href="https://github.com/neethureddych/smartspend"
-                   target="_blank">
-                    View on GitHub
-                </a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Hackathons -->
-    <section id="hackathons" class="section">
-
-        <h2>Hackathons</h2>
-
-        <div class="hackathon-card">
-
-            <h3>Hyperbloom September</h3>
-
-            <p>
-                Participated with my SmartSpend expense management project.
-            </p>
-
-            <a href="https://github.com/neethureddych/smartspend"
-               target="_blank">
-                SmartSpend on GitHub
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section contact">
-
-        <h2>Contact Me</h2>
-
+      <article class="project-card">
+        <h3>Student Marks Calculator</h3>
         <p>
-            Interested in connecting or checking out my projects?
+          A C programming project that calculates student marks, total,
+          average, and pass or fail status.
         </p>
+        <a href="https://github.com/neethureddych/student-marks-calculator"
+           target="_blank" rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </article>
 
-        <div class="contact-links">
-
-            <a href="https://github.com/neethureddych"
-               target="_blank">
-                GitHub
-            </a>
-
-            <a href="mailto:your-email@example.com">
-                Email
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-    <footer>
-
+      <article class="project-card">
+        <h3>Contact Management System</h3>
         <p>
-            © 2026 Neethu Reddy. Built with HTML, CSS and JavaScript.
+          A C application for adding, viewing, searching, updating, and
+          deleting contact records.
         </p>
+        <a href="https://github.com/neethureddych/contact-management-system"
+           target="_blank" rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </article>
+    </div>
+  </section>
 
-    </footer>
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Thank you for visiting my portfolio!</p>
+    <p>
+      GitHub:
+      <a href="https://github.com/neethureddych"
+         target="_blank" rel="noopener noreferrer">
+        github.com/neethureddych
+      </a>
+    </p>
+  </section>
 
-    <script src="script.js"></script>
-
+  <footer>
+    <p>© 2026 Neethu Reddy | Developer Portfolio</p>
+  </footer>
 </body>
 </html>
